@@ -1,0 +1,3 @@
+mailman mailman@fel.cvut.cz,678910234 mail
+smsman smsman@fel.cvut.cz,970256223 sms
+
