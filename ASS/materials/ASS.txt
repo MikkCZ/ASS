@@ -1,0 +1,16 @@
+předměty mailu [ASS]...
+před odesláním "mvn clean" nebo vymazat složku s výstupem
+- task 1
+	- testy pro metody iterátoru
+
+- task 2
+	- oprava QuickSortu, obfuscate a dekompilace
+	- Trezor
+
+===== Cviko 4 =====
+
+Singleton
+
+Strategy
+	- aplikované rozhraní např. pro použití různých implementací se stejnou funkcí
+	

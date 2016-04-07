@@ -1,0 +1,10 @@
+cviko 4
+formát adresáře:
+login e-mail,123456789 [mail/SMS]
+
+úkol:
+singleton přístup k adresáři
+	+ getEmail(String login);
+	+ getPhone(String login);
+strategy prototyp tříd odesílajících zprávu emailem/SMS
+	- stačí výpis

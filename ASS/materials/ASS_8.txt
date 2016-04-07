@@ -1,0 +1,52 @@
+References
+	-> Strong
+		String s = "s";
+	-> Weak
+		mají get(), která vrátí původní objekt
+		-> Soft
+			SoftReference<String> ss = new SoftReference<>(s);
+			(strong reference na soft referenci)
+		-> Weak
+			WeakReference<String> ...
+		-> Phantom
+			get() vrací vždy null
+			
+	Př.
+		String s = new String("s");
+		WeakReference<String> ss = new WeakReference<>(s);
+		System.gc(); //nic se nestane
+		s = null;
+		System.gc(); //objekt se zahodí, protože už je na něj jen WeakReference
+		s = ss.get(); //bude null, protože jsme zahodili
+		
+		// u SoftReference zůstanou na heap, dokud ho GC někdy nezahodí
+		// u WeakReference je garantováno, že se objekt zahodí na první průchod GC
+		// u PhantomReference se nezahodí, pokud je na ReferenceQueue
+	
+ReferenceQueue rq;
+	Object o = new Object();
+	WR<> wr = new WR(o, rq);
+	o = null; //wr bude v rq
+	
+Problémy:
+	-> extension of final class
+			final class FinalClass {String a;}
+			class ExtensionProperties {String aCaps;}
+		řešení:
+			Map<WR<FinalClass>,ExtensionProperties> m = new HashMap(); // pak stačí dostatečně často mapu projít a smazat všechno, co je null
+	-> caching
+		Soft - zahodí se až když dochází paměť
+		SoftHashMap
+	-> finalizing
+		Phantom - už se k ní nemám dostat
+		
+Multiton	- objekt pool pry každý typ objektu
+			
+Prototyping	- prototype.clone(); // pro ušetření složité inicializace
+			- nebo factory
+			
+
+	
+	
+	
+	
