@@ -1,0 +1,5 @@
+input type - text, search, url, tel, email, password, datetime, file, ...
+
+
+web: https://miketaylr.com/code/input-type-attr.html
+

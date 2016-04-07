@@ -1,0 +1,262 @@
+/** MAIN **/
+
+body {
+    font-family: "Lucida Grande", Lucida Grande, "Lucida Sans Unicode", Lucida Sans, sans-serif;
+    background-color: #f1f1f1;
+    color: #222222;
+    height:100%;
+}
+
+#container {
+    max-width: 960px;
+    margin: 0 auto;
+    border: 2px;
+    border-style: solid;
+    border-color: #bbb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#container>* {
+    padding: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header, footer {
+    background-color: #bbb;
+}
+
+header * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header img#logo {
+    max-width: 8em;
+    max-height: 6em;
+    margin-right: 1em;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+header nav {
+    font-size: 0.7em;
+    float: right;
+}
+
+header nav a {
+    margin-left: 0.7em;
+}
+
+main nav#breadcrumb {
+    font-size: 0.7em;
+    text-align: left;
+}
+
+main nav#pagination {
+    font-size: 0.7em;
+    text-align: center;
+}
+
+main nav#breadcrumb a, main nav#pagination a {
+    padding: 0;
+    border-radius: 3px;
+}
+
+main nav#pagination a {
+    width: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.7em;
+}
+
+/** INDEX **/
+
+main #party {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+main #party img {
+    display: inline-block;
+    padding: 0 0.6em;
+    min-width: 140px;
+    max-width: 160px;
+    opacity: 0.85;
+}
+
+main #party a img:hover {
+    opacity: inherit;
+}
+
+main nav {
+    margin-top: 2em;
+    margin-bottom: 2em;	
+}
+
+main nav a.buttons {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+main nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    color: inherit;
+    padding: 0.5em;
+    background-color: #659324;
+    background-image: linear-gradient(to bottom, #f1f1f1, #d1d1d1);
+    border-radius: 6px;
+}
+
+main nav a:hover {
+    text-decoration: none;
+    background-image: linear-gradient(to top, #f1f1f1, #d1d1d1);
+}
+
+main nav.buttons {
+    text-align: center;
+}
+
+/** FORM **/
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: #bbb;
+    border-radius: 10px;
+}
+
+form>* {
+    display: block;
+    text-align: center;
+}
+
+form input {
+    width: 80%;
+    margin: 0 auto;
+}
+
+form input[type="submit"] {
+    width: inherit;
+}
+
+form label[for="remember"] {
+    font-size: 0.7em;
+}
+
+form label span.warning {
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+form label span.warning::before {
+    content: " (";
+}
+
+form label span.warning::after {
+    content: ")";
+}
+
+/** USER **/
+
+section#user-info .details {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    font-style: italic;
+}
+
+section#user-galleries ul {
+    list-style: none;
+}
+
+section#user-galleries li {
+    overflow: hidden;
+}
+
+section#user-galleries li * {
+    vertical-align: top;
+}
+
+section#user-galleries li img {
+    display: inline-block;
+    margin-top: 1.5em;
+    margin-right: 2em;
+    min-width: 140px;
+    max-width: 160px;
+}
+
+section#user-galleries li aside {
+    display: inline-block;
+}
+
+section#user-galleries li .details {
+    display: inline-block;
+    line-height: 1.2em;
+    max-height: 3.6em;
+    width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis; /* hack needed - pro přetečení o řádek níž */
+}
+
+/** GALLERY **/
+
+section#gallery-info time {
+    font-style: italic;
+}
+
+section#gallery-info .details {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    font-style: italic;
+}
+
+section#photos {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+section#photos .foto {
+    border: 1px solid #bbb;
+    display: inline-block;
+    padding: 0.3em;
+    margin: 0.3em;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+}
+
+section#photos img {
+    opacity: 0.8;
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 120px;
+    max-width: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+section#photos img:hover {
+    opacity: inherit;
+}

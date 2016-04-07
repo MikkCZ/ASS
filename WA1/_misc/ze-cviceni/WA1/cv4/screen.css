@@ -1,0 +1,89 @@
+* {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    text-align: justify;
+    background-color: grey;
+}
+    
+body {
+    width: 90%;
+	max-width: 400px;
+    margin: 0px auto;
+}
+
+p {
+	height: 70px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+    
+header h1, article h2, article h3 {
+    border-width: 0.1em 0;
+	border-radius: 0.3em;
+}
+
+h1::before {
+	content: "<h1>";
+}
+
+h2 {
+	counter-increment: nadpis2;
+}
+
+h2::before {
+	content: counter(nadpis2) ". <h2>";
+}
+
+h3::before {
+	content: "<h3>";
+}
+    
+header h1 {
+    font-size: 200%;
+    color: darkgreen;
+    border-style: solid;
+    border-color: red;
+}
+    
+article h2 {
+    font-size: 160%;
+    color: darkblue;
+    border-style: dashed;
+    border-color: white;
+}
+    
+article h3 {
+    font-size: 140%;
+    color: purple;
+    border-style: dotted;
+    border-color: yellow;
+}
+    
+nav {
+    float: left;
+}
+    
+article {
+    margin-left: 100px;
+}
+    
+nav ul {
+    padding-left: 0;
+    margin: 5px 25px;
+}
+    
+nav ul li a {
+    color: yellow;
+	text-decoration: none;
+}
+    
+nav ul li a:hover {
+    color: transparent;
+	text-decoration: underline;
+}
+    
+footer {
+    clear: left;
+    text-align: center;
+    border-top: 0.1em solid black;
+}

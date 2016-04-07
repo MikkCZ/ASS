@@ -1,0 +1,24 @@
+form {
+	max-width: 300px;
+	margin: 0 auto;
+	padding: 12px;
+	text-align: center;
+	border: 2px;
+	border-style: solid;
+	border-color: #bbb;
+	border-radius: 10px;
+}
+
+form>* {
+	display: block;
+	text-align: center;
+}
+
+form input {
+	margin: 0 auto;
+}
+
+form label[for="remember"] {
+	font-size: 0.7em;
+}
+

@@ -1,0 +1,111 @@
+body {
+	font-family: "Lucida Grande", Lucida Grande, "Lucida Sans Unicode", Lucida Sans, sans-serif;
+	background-color: #f1f1f1;
+	color: #222222;
+	height:100%;
+}
+
+#container {
+	max-width: 960px;
+	margin: 0 auto;
+	border: 2px;
+	border-style: solid;
+	border-color: #bbb;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+#container>* {
+	padding: 14px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header, footer {
+	background-color: #bbb;
+}
+
+header * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header img#logo {
+	max-width: 8em;
+	max-height: 6em;
+	margin-right: 1em;
+}
+
+header h1 {
+	font-size: 1.5em;
+}
+
+header nav {
+	font-size: 0.7em;
+	float: right;
+}
+
+header nav a {
+	margin-left: 0.7em;
+}
+
+main nav#breadcrumb {
+	font-size: 0.7em;
+}
+
+main #party {
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+main #party img {
+	display: inline-block;
+	padding: 0 0.6em;
+	min-width: 140px;
+	max-width: 160px;
+}
+
+main #party a img:hover {
+	opacity: 0.85;
+}
+
+main nav.buttons {
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;	
+}
+
+main nav.buttons a {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+main nav.buttons a {
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	color: inherit;
+	padding: 0.5em;
+    background-color: #659324;
+    background-image: linear-gradient(to bottom, #81BC2E, #659324);
+    border-radius: 6px;
+}
+
+main nav.buttons a:hover {
+	text-decoration: none;
+	background-image: linear-gradient(to top, #81BC2E, #659324);
+}
+
+footer {
+	text-align: center;
+	font-size: 0.7em;
+}
+
+

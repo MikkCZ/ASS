@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} /admin
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /~stankmic/semestralka/admin/ [L]
+# if installed in a subfolder, the row above should look like
+# RewriteRule . /subfolder/structure/admin/ [L]
+# else
+# RewriteRule . /admin/ [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /~stankmic/semestralka/ [L]
+# if installed in a subfolder, the row above should look like
+# RewriteRule . /subfolder/structure/ [L]
+# else
+# RewriteRule . / [L]
