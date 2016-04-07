@@ -1,0 +1,46 @@
+== Task introduction ==
+
+- What should it do? -
+In specified directory (and subdirs) find files with given name extension (*) and:
+	copy them with another given extension or
+	rename them - change their extension to another given or
+	just remove them.
+	
+* in fact by extension is meant the file name (incl. file extension) ending
+
+- And how it can be used? -
+suffix_handle.sh [ -c | -m | -r ] ext1 ext2
+
+-c for copy,
+-m for rename and
+-r for remove.
+ext1 and ext2 are the desired extensions, where ext2 is not required by -r.
+
+- What output can it produce? -
+For copy and rename a list of files changed (before => after).
+For remove a list of files removed.
+And some error output... (nobody's perfect)
+
+- Let's code it -
+Check –v and –h parameters
+Parse&check other params
+	- read permissions for dir
+	- operation param exists
+	- extension params (parity)
+Process the files
+
+- Second argument -
+Desired operation – just validate it.
+	- operation param exists
+
+- Third and maybe fourth arg -
+Check arg number according the operation.
+	- extension params (parity)
+
+- Process the files (THIS IS IT) -
+Finally make the desired operation.
+	- IFS - file with space in their name
+	- check read permissions for copy - protect from owners without read permissions ;-)
+
+- 100 ! (feel like a champion) -
+100 lines (incl. comments)
