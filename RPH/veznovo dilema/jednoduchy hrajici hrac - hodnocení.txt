@@ -1,0 +1,13 @@
+Hráè je schopen hrát [nejjednodušší hráè bez pamìti je za 2 body].
+
+Hodnocení kódu [0-4 bodu]
+
+Èitelnost kódu obecnì [0-1]: 1
+
+Komentáøe [0-1]: 1
+Komentáøe jsou OK, jen používejte docstringy místo obecných komentáøù (tam, kde je to vhodné.
+
+Struktura (logika, opakování kódu, ...) [0-1]: 0
+Zkuste používat pojmenované konstanty místo True a False (kde je to vhodné).
+
+Elegance, nápaditost [0-1]: 0 
